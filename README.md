@@ -1,8 +1,11 @@
-# Start C#
+# C#
 
-### Down load .NET
+## How to start C#
+
+### 1. Down load .NET
 - [Download .NET for mac](https://dotnet.microsoft.com/en-us/download) 
  
+ ### 2. terminal
  ```bash
  # test dotnet installed
     dotnet --version

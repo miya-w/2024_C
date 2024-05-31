@@ -118,6 +118,11 @@ class Rectangle
 
     //expression-bodied methods
     //could not be made static as they use the state of an instance (width and height)
+    // example : 
+    // **expression-bodied methods**: public int CalculateCircumference() => 2 * Width + 2 * _height;
+    // **normal way** : public int CalculateCircumference(){ return 2 * Width + 2 * _height;}
+
+
     public int CalculateCircumference() => 2 * Width + 2 * _height;
 
     public int CalculateArea() => Width * _height;
