@@ -224,9 +224,8 @@ class Program
 [Back to Top](#table-of-contents)
 
 # #Optional-Parameters
-***** Optional parameter *****
-// The Rectangle constructor now has default values of 1 for both width and height,
-// so it can be instantiated without providing any parameters.
+*** Optional parameter ***
+The Rectangle constructor now has default values of 1 for both width and height, so it can be instantiated without providing any parameters.
 
 ```cs
 public class Rectangle
