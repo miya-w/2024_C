@@ -11,7 +11,7 @@ class DiceGame
     public DiceGame()
     {
         // !!!  Random random = new Random(); -> creating the new class
-        // Randon is a connon used type in C#
+        // Randon is a common used **type** in C#
         Random random = new Random();
         randomNumber = random.Next(1, 7);
         guessTime = 0;
@@ -64,7 +64,7 @@ class Program
 
 
 
-// //Dice game - procedeur 
+// --- Dice game - procedeur --- 
 generate the random number 
   Random random = new Random();
     int randomNumber = random.Next(1, 7); // Generates a random number between 1 and 6

@@ -116,11 +116,33 @@ public class Program
 1. 抽象類別不能實體化。
 2. 抽象方法是用來給子類別重寫的方法，如果不重寫的話，抽象方法就沒有存在的意義。
 3. 如果類別中包含抽象方法，那麼整個類別就必須定義為抽象類別，不論是否還包含其他一般方法。
+4. abstract - override
+- example
+```cs
+abstract class Shape
+{
+    public abstract double Area(); // Abstract method
+}
+
+class Rectangle : Shape
+{
+    public override double Area()
+    {
+        // Provide implementation for the Area method
+        return Width * Height;
+    }
+    
+    // Other members and fields specific to Rectangle class
+    public double Width { get; set; }
+    public double Height { get; set; }
+}
+
+
+``` 
 
 ```cs
 
 // 首先車子這個類別指定義了車子啟動方式、消耗能源；這是不管哪種車子都會具備的功能，因此我們把定義成一個抽象類別，來讓特斯拉以及汽車繼承後實作，今天如果是機車那我們也可以繼承車子這個抽象類別實作自己的啟動、以及消耗能源方式。
-
 
 
 public abstract class Car

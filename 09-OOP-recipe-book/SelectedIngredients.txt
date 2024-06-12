@@ -1,2 +1,1 @@
-Selected Ingredients:
-System.Collections.Generic.List`1[System.Int32]
+Selected Ingredients:[1, 2, 3, 4]

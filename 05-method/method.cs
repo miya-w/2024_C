@@ -25,11 +25,6 @@ bool IsLong( string input_word)
 }
 
 
-
-
-
-
-
 // return int
 int Add(int a, int b){
   return a + b;
