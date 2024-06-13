@@ -542,6 +542,13 @@ List<int> GetOnlyPositive(
 //Out parameter
 //###################
 
+// *** Out Keyword ***
+// The out keyword in C# is used for passing arguments to methods 
+// and getting back data from the methods without using the return value of the method.
+// useful when you want a method to return more than one value.
+
+
+
 bool isParsed = int.TryParse(
     userInput, out int userInputParsedToInt);
 if (isParsed)
@@ -558,3 +565,56 @@ else
 
 Console.WriteLine("Press any key to close");
 Console.ReadKey();
+
+
+//example: using out
+class Program
+{
+    static void Main()
+    {
+        int dividend = 10;
+        int divisor = 3;
+        int quotient, remainder;
+        
+        Divide(dividend, divisor, out quotient, out remainder);
+        
+        Console.WriteLine($"Dividend: {dividend}, Divisor: {divisor}");
+        Console.WriteLine($"Quotient: {quotient}, Remainder: {remainder}");
+    }
+
+    static void Divide(int dividend, int divisor, out int quotient, out int remainder)
+    {
+        quotient = dividend / divisor;
+        remainder = dividend % divisor;
+    }
+}
+
+// Dividend: 10, Divisor: 3
+// Quotient: 3, Remainder: 1
+
+
+class Program
+{
+    int input;
+    int square;
+    int cube;
+    // Define a method that uses an out parameter.
+    public static void ComputeValues(int input, out  int square, out int cube)
+    {
+        square = input * input;  // Calculate square of the input
+        cube = input * input * input;  // Calculate cube of the input
+    }
+
+    static void Main()
+    {
+        int myNumber = 3;
+        int squared;
+        int cubed;
+
+        // Call the method with out parameters.
+        ComputeValues(myNumber, out  squared, out cubed);
+
+        Console.WriteLine($"The square of {myNumber} is {squared}");
+        Console.WriteLine($"The cube of {myNumber} is {cubed}");
+    }
+}

@@ -1,6 +1,6 @@
 # C#
 
-## How to start C#
+## Setting Up the Development Environment
 
 ### 1. Down load .NET
 - [Download .NET for mac](https://dotnet.microsoft.com/en-us/download) 
@@ -20,21 +20,83 @@
     # output: Hello World!
  ```
 ---
-### Syntax 
-- [Variables and Data Types]()
+# Table of contents
+#### Basic Syntax 
+1. **Introduction to C#**
+   - Overview of C#
+   - Setting Up the Development Environment
 
-- [Control Structures](): if-else statements, switch statements, loops (for, while, do-while), and conditional operators.
+2. **Basic Syntax**
+   - Basic Structure of a C# Program
+   - Main Method 
+   - Namespaces 
+   - Comments -> //
 
-- [Methods and Functions]():
+3. **Data Types and Variables**
+   - Primitive Data Types
+   - Variables
+   - Constants
+   - Type Casting
 
-- [Classes and Objects](): Classes are templates for creating objects in C#. They encapsulate data for the object and methods to operate on that data. The syntax for a class is: class ClassName { // class members }
+4. **Operators**
+   - Arithmetic Operators
+   - Comparison Operators
+   - Logical Operators
+   - Assignment Operators
+   - Bitwise Operators
 
-- [Arrays and List]() : Arrays are used to store multiple values of the same type sequentially. They are declared using the syntax: datatype[] arrayName = new datatype[size];
+5. **Control Flow**
+   - Conditional Statements
+     - if
+     - if-else
+     - switch
+   - Loops
+     - for Loop
+     - while Loop
+     - do-while Loop
+     - foreach Loop
+   - Jump Statements
+     - break
+     - continue
+     - return
 
-- [ToString and int.Parse ]()
-- [Out keyword]()
+6. **Methods**
+   - Defining Methods
+   - Method Parameters
+   - Return Values
+   - Method Overloading
+
+7. **Classes and Objects**
+   - Defining Classes
+   - Creating Objects
+   - Fields and Properties
+   - Methods in Classes
+   - Constructors
+   - Destructors
+8. **Collections**
+   - Arrays
+   - Lists
+   - Dictionaries
+   - Other Collection Types
+
+ **Other**
+   - ToString and int.Parse 
+   - Out keyword
+### OOP
 - [OOP]() :Encapsulation,Inheritance, Abstraction, Polymorphism:
+   **Object-Oriented Programming (OOP)**
+   - Encapsulation
+     - Access Modifiers
+     - Properties
+        - Interfaces
    - [Encapusolation Practice]()
+   - Inheritance
+     - Base and Derived Classes
+     - Method Overriding
+   - Polymorphism
+     - Virtual and Override Keywords
+     - Abstract Classes
+  
 
 ## Start C#
 
