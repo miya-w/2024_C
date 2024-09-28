@@ -59,25 +59,24 @@
      - break
      - continue
      - return
-
-6. **Methods**
+6. **Collections**
+   - Arrays
+   - Lists
+   - Dictionaries
+   - Other Collection Types
+7. **Methods**
    - Defining Methods
    - Method Parameters
    - Return Values
    - Method Overloading
 
-7. **Classes and Objects**
+8. **Classes and Objects**
    - Defining Classes
    - Creating Objects
    - Fields and Properties
    - Methods in Classes
    - Constructors
    - Destructors
-8. **Collections**
-   - Arrays
-   - Lists
-   - Dictionaries
-   - Other Collection Types
 
  **Other**
    - ToString and int.Parse 
