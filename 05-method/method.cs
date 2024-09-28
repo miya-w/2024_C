@@ -6,7 +6,7 @@ var userInput = Console.ReadLine();
 bool checkisLong = IsLong(userInput);
 Console.WriteLine(checkisLong);
 
-bool method 1
+// bool method 1
 bool IsLong( string input_word)
 {
   if(userInput.Length > 10)

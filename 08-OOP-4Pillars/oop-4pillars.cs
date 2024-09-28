@@ -24,9 +24,14 @@ class Person
     set { name = value; }  // set method
   }
 }
+
+
+
 // 在client端會直接接觸到myClass中的data1 & data2，而data1 & data2也因此要將存取修飾詞(Access Modifier)設為public(無限制存取)，
 //而在加入封裝 (Encapsulation)概念後，data1 & data2的存取修飾詞(Access Modifier)就可以改為預設的private(不指定即為private)，可提高程式的安全性，也提升了擴展性，
 // 因為若需求改變只需要修改method sum()而不需要修改client端的程式。
+
+
 
 
 // Example 1. in MyClass (No capsulation)

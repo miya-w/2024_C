@@ -46,3 +46,16 @@ static int Main(string[] args)
 }
 
 
+//Comments
+
+// ->this is a single-line comment
+/*
+-> this is
+a multiline
+comment
+*/
+
+// -> show the console and read the typing
+Console.WriteLine("Hello World");
+// ->  Console.ReadLine() is a method used to read a line of text entered by the user from the console (the command line or terminal).
+Console.ReadLine();

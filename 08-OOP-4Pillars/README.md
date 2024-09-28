@@ -13,19 +13,48 @@
 The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. 
 To achieve this, you must:
 1. declare fields/variables as private
-2. provide public "get and set" methods, through properties, to access and update the value of a private field
+2. provide public **get and set** methods, through properties, to access and update the value of a private field
+
+- Encapsulation 就像一個銀行，保管你不想被碰觸的資料保險箱(設定為private)，**get & set** 就像銀行的出納櫃臺讓你自由的使用被保護的物件。
+
 
 ```cs
 class Person
 {
-  private string name; // field
+    // Private field
+    private string name; 
 
-  public string Name   // property
-  {
-    get { return name; }   // get method
-    set { name = value; }  // set method
-  }
+    // Public property to access and modify the private field
+    public string Name   
+    {
+        // Getter method: allows read access to the 'name' field
+        get { return name; }   
+
+        // Setter method: allows write access to the 'name' field
+        set { name = value; }  
+    }
 }
+
+class Program
+{
+    static void Main(string[] args)
+    {   
+        // Person-> is the class name that you've defined earlier
+        // person -> is the variable name
+        Person person = new Person();
+
+        // Using the 'set' method to assign a value to the 'name' field
+        person.Name = "Mia";
+
+        // Using the 'get' method to retrieve the value of the 'name' field
+        Console.WriteLine(person.Name); // Output: Mia
+    }
+}
+
+
+```
+
+```cs
 // 在client端會直接接觸到myClass中的data1 & data2，而data1 & data2也因此要將存取修飾詞(Access Modifier)設為public(無限制存取)，
 //而在加入封裝 (Encapsulation)概念後，data1 & data2的存取修飾詞(Access Modifier)就可以改為預設的private(不指定即為private)，可提高程式的安全性，也提升了擴展性，
 // 因為若需求改變只需要修改method sum()而不需要修改client端的程式。

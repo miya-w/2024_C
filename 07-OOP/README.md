@@ -184,6 +184,7 @@ public class Rectangle
     public int width;
     public int height;
     // Constructor
+    //this:this represents the current instance of the class. In your Rectangle example, this is like saying, "Hey, I'm referring to my width and height, not just any width and height.
     public Rectangle(int width, int height) 
     { 
         this.width = width; 
